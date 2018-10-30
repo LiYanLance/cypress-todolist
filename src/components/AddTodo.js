@@ -19,8 +19,12 @@ export default class extends Component {
                     <input type="text" placeholder="React-Redux Todolist" ref={node => {
                         this.input = node
                     }}/>
-                    <button type="submit">
-                        Add Todo
+                    <button
+                        type="submit"
+                        id="main"
+                        className="btn btn-large"
+                        data-cy="submit">
+                        Submit
                     </button>
                 </form>
             </div>

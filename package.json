@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "dev": "webpack-dev-server --devtool eval --progress --colors --content-base build"
+    "dev": "webpack-dev-server --devtool eval --progress --colors --content-base build",
+    "cy:open": "cypress open",
+    "cypress": "cypress run"
   },
   "keywords": [
     "react",
@@ -38,5 +40,8 @@
     "url-loader": "^0.5.9",
     "webpack": "^3.4.1",
     "webpack-dev-server": "^2.6.1"
+  },
+  "devDependencies": {
+    "cypress": "^3.1.0"
   }
 }
